@@ -1,0 +1,58 @@
+{
+ "channel": "https://www.youtube.com/@codemanyoutube",
+ "playlist": "https://www.youtube.com/playlist?list=PLL6fhUZc55nw",
+ "notes_repo": "https://github.com/Amit-kharod/system-design-notes",
+ "episodes": [
+  {
+   "ep": 0,
+   "title": "What is System Design",
+   "video": "https://youtu.be/797Hf7PX-j8",
+   "publish_at": "2026-11-12T20:00:16+05:30",
+   "thumb": "thumbs/ep00.jpg"
+  },
+  {
+   "ep": 1,
+   "title": "What is an IP Address",
+   "video": "https://youtu.be/SKMoZyz1eAI",
+   "publish_at": "2026-11-14T20:00:00+05:30",
+   "notes": "https://github.com/Amit-kharod/system-design-notes/tree/main/ep01-ip-address",
+   "thumb": "thumbs/ep01.jpg"
+  },
+  {
+   "ep": 2,
+   "title": "Subnet Mask, Private IP & NAT",
+   "video": "https://youtu.be/ZSkqJmijfow",
+   "publish_at": "2026-11-16T20:00:00+05:30",
+   "notes": null,
+   "thumb": "thumbs/ep02.jpg"
+  }
+ ],
+ "shorts": [
+  {
+   "title": "Why Apps Crash at 1 Crore Users",
+   "video": "https://youtu.be/TLbbKItAsPE",
+   "publish_at": "2026-11-12T20:32:45+05:30"
+  },
+  {
+   "title": "Why Does Every Number in an IP Address Stop at 255?",
+   "video": "https://youtu.be/3QfpiLuuo3g",
+   "publish_at": "2026-11-14T20:00:00+05:30"
+  },
+  {
+   "title": "5 IP Address Interview Questions: How Many Can You Solve?",
+   "video": "https://youtu.be/VAcmgMUHq10",
+   "publish_at": "2026-11-15T13:00:00+05:30"
+  },
+  {
+   "title": "Why Lakhs of Phones Have the Same IP Address: Private IP & NAT",
+   "video": "https://youtu.be/ILxamsK7PQY",
+   "publish_at": "2026-11-16T20:00:00+05:30"
+  },
+  {
+   "title": "4 IP Address Interview Questions: NAT, IPv6 and Subnetting",
+   "video": "https://youtu.be/gq3LSR5LaFo",
+   "publish_at": "2026-11-17T13:00:00+05:30"
+  }
+ ],
+ "built": "2026-11-14T13:40:01+05:30"
+}

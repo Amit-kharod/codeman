@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Code Man</title>
+<meta name="description" content="The latest Code Man video, the System Design for Beginners (Hindi) series and its free notes.">
+<meta property="og:title" content="Code Man">
+<meta property="og:description" content="The latest video, the System Design series and the free notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Mono:wght@400;700&display=swap">
+<style>
+:root{--navy:#1a2640;--deep:#111a2e;--panel:#22304d;--ice:#8fd0f2;--steel:#7aa6cf;--red:#e3262c;--white:#ffffff;--mist:#b7c3d6;
+  --sans:"Inter",system-ui,-apple-system,sans-serif;--mono:"Space Mono",ui-monospace,Menlo,monospace;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--deep);color:var(--white);font-family:var(--sans)}
+main{max-width:480px;margin:0 auto;padding:max(24px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left));display:grid;gap:18px}
+header{display:grid;gap:4px;text-align:center;padding-top:8px}
+h1{margin:0;font-size:30px;font-weight:900;letter-spacing:-.02em}
+.tag{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ice)}
+.sub{margin:0;color:var(--mist);font-size:14px}
+.hero{background:var(--navy);border:1px solid #2d3d5e;border-radius:16px;overflow:hidden;display:grid}
+.hero img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--panel)}
+.hero .body{padding:14px 16px 16px;display:grid;gap:10px}
+.new{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--red);font-weight:700}
+.hero h2{margin:0;font-size:21px;font-weight:800;line-height:1.25;text-wrap:balance}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 16px;border-radius:12px;
+  font-weight:800;font-size:16px;text-decoration:none;color:var(--deep);background:linear-gradient(135deg,var(--ice),var(--steel))}
+.btn:focus-visible,.link:focus-visible{outline:3px solid var(--white);outline-offset:2px}
+.next{font-size:13px;color:var(--mist);text-align:center;margin:0}
+.links{display:grid;gap:10px}
+.link{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px;min-height:56px;padding:12px 16px;border-radius:12px;
+  background:var(--navy);border:1px solid #2d3d5e;color:var(--white);text-decoration:none}
+.link b{font-weight:800;font-size:15px}
+.link span{display:block;font-size:12px;color:var(--mist);margin-top:2px}
+.link i{font-style:normal;color:var(--ice);font-size:18px}
+h3{margin:8px 0 0;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--steel);font-weight:700}
+.eps{display:grid;gap:8px}
+.ep{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center;padding:8px;border-radius:12px;background:var(--navy);
+  color:var(--white);text-decoration:none;border:1px solid #2d3d5e}
+.ep img{width:96px;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:var(--panel)}
+.ep b{font-size:14px;font-weight:800;display:block}
+.ep span{font-size:12px;color:var(--mist)}
+footer{text-align:center;font-size:12px;color:var(--mist)}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="tag">Software engineering · System design · AI</div>
+    <h1>Code Man</h1>
+    <p class="sub">A new System Design episode every day at 8:00 PM (IST), in Hindi.</p>
+  </header>
+  <section class="hero" id="hero" aria-label="Latest episode">
+    <div class="body"><h2>Watch the latest video on YouTube</h2>
+      <a class="btn yt" href="https://www.youtube.com/@codemanyoutube">Open YouTube</a></div>
+  </section>
+  <p class="next" id="next" hidden></p>
+  <nav class="links" id="links" aria-label="Links">
+    <a class="link yt" href="https://www.youtube.com/@codemanyoutube"><div><b>YouTube channel</b><span>@codemanyoutube</span></div><i>→</i></a>
+  </nav>
+  <h3 id="ephead" hidden>All episodes</h3>
+  <div class="eps" id="eps"></div>
+  <footer id="foot">Code Man</footer>
+</main>
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+  const ua = navigator.userAgent || '';
+  const ANDROID = /Android/i.test(ua), IOS = /iPhone|iPad|iPod/i.test(ua);
+  // open YouTube links in the YouTube app on phones (Instagram's browser would keep them inside), else the web page
+  function openYT(e) {
+    const a = e.currentTarget, href = a.href, m = /(?:youtu\.be\/|v=)([\w-]{11})/.exec(href);
+    if (!ANDROID && !IOS) return;
+    e.preventDefault();
+    const path = m ? 'www.youtube.com/watch?v=' + m[1] : href.replace(/^https?:\/\//, '');
+    if (ANDROID) {
+      location.href = 'intent://' + path + '#Intent;package=com.google.android.youtube;scheme=https;S.browser_fallback_url=' + encodeURIComponent(href) + ';end';
+    } else {
+      const t = setTimeout(() => { if (!document.hidden) location.href = href; }, 1200);
+      document.addEventListener('visibilitychange', () => clearTimeout(t), { once: true });
+      location.href = 'youtube://' + path;
+    }
+  }
+  function wire(root) { root.querySelectorAll('a.yt').forEach(a => a.addEventListener('click', openYT)); }
+  function when(iso) {
+    const d = new Date(iso);
+    const f = new Intl.DateTimeFormat('en-IN', { timeZone: 'Asia/Kolkata', weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', hour12: true });
+    return f.format(d).replace(/\b(am|pm)\b/, s => s.toUpperCase());
+  }
+  function link(href, title, sub, yt) {
+    const a = el('a', 'link' + (yt ? ' yt' : '')); a.href = href; if (!yt) { a.target = '_blank'; a.rel = 'noopener'; }
+    const d = el('div'); d.append(el('b', null, title)); if (sub) d.append(el('span', null, sub));
+    a.append(d, el('i', null, '→')); return a;
+  }
+  function render(data) {
+    const now = Date.now();
+    const out = (data.episodes || []).filter(e => Date.parse(e.publish_at) <= now).sort((a, b) => Date.parse(b.publish_at) - Date.parse(a.publish_at));
+    const up = (data.episodes || []).filter(e => Date.parse(e.publish_at) > now).sort((a, b) => Date.parse(a.publish_at) - Date.parse(b.publish_at));
+    const shorts = (data.shorts || []).filter(s => Date.parse(s.publish_at) <= now).sort((a, b) => Date.parse(b.publish_at) - Date.parse(a.publish_at));
+    const latest = out[0];
+    if (latest) {
+      const hero = $('#hero'); hero.replaceChildren();
+      const img = el('img'); img.src = latest.thumb; img.alt = latest.title; img.width = 640; img.height = 360;
+      const body = el('div', 'body');
+      body.append(el('div', 'new', 'NEW · EP ' + latest.ep), el('h2', null, latest.title));
+      const b = el('a', 'btn yt', '▶  Watch on YouTube'); b.href = latest.video; body.append(b);
+      if (latest.notes) { const n = el('a', 'link', null); n.href = latest.notes; n.target = '_blank'; n.rel = 'noopener';
+        const d = el('div'); d.append(el('b', null, 'Free notes for this episode'), el('span', null, 'Diagrams, interview questions and a PDF'));
+        n.append(d, el('i', null, '→')); body.append(n); }
+      hero.append(img, body);
+    }
+    if (up[0]) { const n = $('#next'); n.hidden = false; n.textContent = 'Next: Ep ' + up[0].ep + ', ' + up[0].title + ' · ' + when(up[0].publish_at); }
+    const L = $('#links'); L.replaceChildren();
+    if (shorts[0]) L.append(link(shorts[0].video, 'Latest Short', shorts[0].title, true));
+    if (data.playlist) L.append(link(data.playlist, 'System Design series', 'Every episode, in order', true));
+    if (data.notes_repo) L.append(link(data.notes_repo, 'Free notes on GitHub', 'All episodes, with PDFs', false));
+    L.append(link(data.channel || 'https://www.youtube.com/@codemanyoutube', 'YouTube channel', '@codemanyoutube', true));
+    const E = $('#eps'); E.replaceChildren();
+    for (const e of out) {
+      const a = el('a', 'ep yt'); a.href = e.video;
+      const img = el('img'); img.src = e.thumb; img.alt = ''; img.loading = 'lazy';
+      const d = el('div'); d.append(el('b', null, 'Ep ' + e.ep + ' · ' + e.title), el('span', null, when(e.publish_at)));
+      a.append(img, d); E.append(a);
+    }
+    $('#ephead').hidden = !out.length;
+    wire(document);
+  }
+  wire(document);
+  fetch('data.json?v=' + Math.floor(Date.now() / 300000)).then(r => r.json()).then(render).catch(() => {});
+})();
+</script>
+</body>
+</html>
