@@ -33,6 +33,14 @@
    "publish_at": "2026-11-19T20:00:00+05:30",
    "notes": null,
    "thumb": "thumbs/ep03.jpg"
+  },
+  {
+   "ep": 4,
+   "title": "TCP vs UDP",
+   "video": "https://youtu.be/xRBKVvfLDRo",
+   "publish_at": "2026-11-21T20:00:00+05:30",
+   "notes": null,
+   "thumb": "thumbs/ep04.jpg"
   }
  ],
  "shorts": [
@@ -70,7 +78,17 @@
    "title": "4 DNS Interview Questions: Resolver, TTL and google.com",
    "video": "https://youtu.be/QjREeVo1RDU",
    "publish_at": "2026-11-20T20:00:00+05:30"
+  },
+  {
+   "title": "Why Calls Skip Lost Packets: UDP Explained",
+   "video": "https://youtu.be/MHpJBGZDZKo",
+   "publish_at": "2026-11-21T20:00:00+05:30"
+  },
+  {
+   "title": "4 TCP vs UDP Interview Questions: Handshake, Ports, Games",
+   "video": "https://youtu.be/ItBQYYV8-Nw",
+   "publish_at": "2026-11-23T20:00:00+05:30"
   }
  ],
- "built": "2026-11-14T23:52:52+05:30"
+ "built": "2026-11-15T02:07:47+05:30"
 }
