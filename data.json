@@ -22,7 +22,7 @@
    "ep": 2,
    "title": "Subnet Mask, Private IP & NAT",
    "video": "https://youtu.be/ZSkqJmijfow",
-   "publish_at": "2026-11-16T20:00:00+05:30",
+   "publish_at": "2026-11-17T20:00:00+05:30",
    "notes": null,
    "thumb": "thumbs/ep02.jpg"
   }
@@ -41,18 +41,18 @@
   {
    "title": "5 IP Address Interview Questions: How Many Can You Solve?",
    "video": "https://youtu.be/VAcmgMUHq10",
-   "publish_at": "2026-11-15T13:00:00+05:30"
+   "publish_at": "2026-11-16T20:00:00+05:30"
   },
   {
    "title": "Why Lakhs of Phones Have the Same IP Address: Private IP & NAT",
    "video": "https://youtu.be/ILxamsK7PQY",
-   "publish_at": "2026-11-16T20:00:00+05:30"
+   "publish_at": "2026-11-17T20:00:00+05:30"
   },
   {
    "title": "4 IP Address Interview Questions: NAT, IPv6 and Subnetting",
    "video": "https://youtu.be/gq3LSR5LaFo",
-   "publish_at": "2026-11-17T13:00:00+05:30"
+   "publish_at": "2026-11-18T20:00:00+05:30"
   }
  ],
- "built": "2026-11-14T13:40:01+05:30"
+ "built": "2026-11-14T18:32:53+05:30"
 }
