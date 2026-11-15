@@ -21,7 +21,7 @@
   {
    "ep": 2,
    "title": "Why Lakhs of Phones Have the Exact Same IP Address",
-   "video": "https://youtu.be/loP7URMupgY",
+   "video": "https://youtu.be/T-njBlfwpW8",
    "publish_at": "2026-11-17T20:00:00+05:30",
    "notes": "https://github.com/Amit-kharod/system-design-notes/tree/main/ep02-subnet-mask-nat",
    "thumb": "thumbs/ep02.jpg"
@@ -61,12 +61,12 @@
   },
   {
    "title": "Why Lakhs of Phones Have the Same IP Address: Private IP & NAT",
-   "video": "https://youtu.be/ILxamsK7PQY",
+   "video": "https://youtu.be/bGYZ_PX1mnA",
    "publish_at": "2026-11-17T20:00:00+05:30"
   },
   {
    "title": "4 IP Address Interview Questions: NAT, IPv6 and Subnetting",
-   "video": "https://youtu.be/1P2GnlPS4QE",
+   "video": "https://youtu.be/IlAvu8GOl6Q",
    "publish_at": "2026-11-18T20:00:00+05:30"
   },
   {
@@ -90,5 +90,5 @@
    "publish_at": "2026-11-23T20:00:00+05:30"
   }
  ],
- "built": "2026-11-15T19:28:50+05:30"
+ "built": "2026-11-15T22:13:54+05:30"
 }
