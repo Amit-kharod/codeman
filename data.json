@@ -12,7 +12,7 @@
   },
   {
    "ep": 1,
-   "title": "What is an IP Address",
+   "title": "One Organisation Sits Above Every IP Address on Earth",
    "video": "https://youtu.be/SKMoZyz1eAI",
    "publish_at": "2026-11-14T20:00:00+05:30",
    "notes": "https://github.com/Amit-kharod/system-design-notes/tree/main/ep01-ip-address",
@@ -20,7 +20,7 @@
   },
   {
    "ep": 2,
-   "title": "Subnet Mask, Private IP & NAT",
+   "title": "Why Lakhs of Phones Have the Exact Same IP Address",
    "video": "https://youtu.be/loP7URMupgY",
    "publish_at": "2026-11-17T20:00:00+05:30",
    "notes": "https://github.com/Amit-kharod/system-design-notes/tree/main/ep02-subnet-mask-nat",
@@ -56,7 +56,7 @@
   },
   {
    "title": "5 IP Address Interview Questions: How Many Can You Solve?",
-   "video": "https://youtu.be/VAcmgMUHq10",
+   "video": "https://youtu.be/aPPaQLQG3eE",
    "publish_at": "2026-11-16T20:00:00+05:30"
   },
   {
@@ -90,5 +90,5 @@
    "publish_at": "2026-11-23T20:00:00+05:30"
   }
  ],
- "built": "2026-11-15T02:07:47+05:30"
+ "built": "2026-11-15T17:06:00+05:30"
 }
