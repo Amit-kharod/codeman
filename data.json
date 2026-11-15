@@ -29,9 +29,9 @@
   {
    "ep": 3,
    "title": "Who Controls Every Domain on the Internet?",
-   "video": "https://youtu.be/QWnr3fG0iok",
+   "video": "https://youtu.be/TAeHMpvWGFA",
    "publish_at": "2026-11-19T20:00:00+05:30",
-   "notes": null,
+   "notes": "https://github.com/Amit-kharod/system-design-notes/tree/main/ep03-dns",
    "thumb": "thumbs/ep03.jpg"
   },
   {
@@ -39,7 +39,7 @@
    "title": "What Exactly Happens When You Text Your Girlfriend? (TCP vs UDP)",
    "video": "https://youtu.be/xRBKVvfLDRo",
    "publish_at": "2026-11-21T20:00:00+05:30",
-   "notes": null,
+   "notes": "https://github.com/Amit-kharod/system-design-notes/tree/main/ep04-tcp-udp",
    "thumb": "thumbs/ep04.jpg"
   }
  ],
@@ -71,12 +71,12 @@
   },
   {
    "title": "Why DNS Changes Take 48 Hours: Caching and TTL Explained",
-   "video": "https://youtu.be/gcBnLng-GUE",
+   "video": "https://youtu.be/VASdBaQuhTg",
    "publish_at": "2026-11-19T20:00:00+05:30"
   },
   {
    "title": "4 DNS Interview Questions: Resolver, TTL and google.com",
-   "video": "https://youtu.be/QjREeVo1RDU",
+   "video": "https://youtu.be/FXsH1hGhGdU",
    "publish_at": "2026-11-20T20:00:00+05:30"
   },
   {
@@ -90,5 +90,5 @@
    "publish_at": "2026-11-23T20:00:00+05:30"
   }
  ],
- "built": "2026-11-15T22:13:54+05:30"
+ "built": "2026-11-16T03:44:30+05:30"
 }
