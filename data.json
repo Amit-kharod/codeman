@@ -29,7 +29,7 @@
   {
    "ep": 3,
    "title": "Who Controls Every Domain on the Internet?",
-   "video": "https://youtu.be/TAeHMpvWGFA",
+   "video": "https://youtu.be/VmdwQ-Zo7Uc",
    "publish_at": "2026-11-19T20:00:00+05:30",
    "notes": "https://github.com/Amit-kharod/system-design-notes/tree/main/ep03-dns",
    "thumb": "thumbs/ep03.jpg"
@@ -65,9 +65,19 @@
    "publish_at": "2026-11-17T20:00:00+05:30"
   },
   {
+   "title": "What Does 255.255.255.0 Actually Mean? Subnet Mask in 2 Minutes",
+   "video": "https://youtu.be/5KmMsKqTK9o",
+   "publish_at": "2026-11-18T08:30:00+05:30"
+  },
+  {
    "title": "4 IP Address Interview Questions: NAT, IPv6 and Subnetting",
    "video": "https://youtu.be/IlAvu8GOl6Q",
    "publish_at": "2026-11-18T20:00:00+05:30"
+  },
+  {
+   "title": "Find the Network and Broadcast Address of Any IP in Seconds",
+   "video": "https://youtu.be/g7WbHlQ9O_8",
+   "publish_at": "2026-11-19T08:30:00+05:30"
   },
   {
    "title": "Why DNS Changes Take 48 Hours: Caching and TTL Explained",
@@ -75,9 +85,19 @@
    "publish_at": "2026-11-19T20:00:00+05:30"
   },
   {
+   "title": "The Whole Internet Was Once One Text File",
+   "video": "https://youtu.be/zqLnxKPUAPQ",
+   "publish_at": "2026-11-20T08:30:00+05:30"
+  },
+  {
    "title": "4 DNS Interview Questions: Resolver, TTL and google.com",
    "video": "https://youtu.be/FXsH1hGhGdU",
    "publish_at": "2026-11-20T20:00:00+05:30"
+  },
+  {
+   "title": "Does the Internet Really Run on Only 13 Servers?",
+   "video": "https://youtu.be/D7PNb5AIxVA",
+   "publish_at": "2026-11-21T08:30:00+05:30"
   },
   {
    "title": "What If Your Girlfriend Got Only Half Your Text?",
@@ -85,10 +105,20 @@
    "publish_at": "2026-11-21T20:00:00+05:30"
   },
   {
+   "title": "Why Your Video Call Never Asks for Lost Voice Again",
+   "video": "https://youtu.be/oZwpUWBhwBk",
+   "publish_at": "2026-11-22T08:30:00+05:30"
+  },
+  {
+   "title": "If UDP Is Faster, Why Not Use It for Everything?",
+   "video": "https://youtu.be/hcKL1YOC8rc",
+   "publish_at": "2026-11-23T08:30:00+05:30"
+  },
+  {
    "title": "4 TCP vs UDP Interview Questions: Handshake, Ports, Games",
    "video": "https://youtu.be/edh7qrzGh8c",
    "publish_at": "2026-11-23T20:00:00+05:30"
   }
  ],
- "built": "2026-11-16T03:59:50+05:30"
+ "built": "2026-11-19T02:13:05+05:30"
 }
